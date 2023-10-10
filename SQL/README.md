@@ -1,28 +1,8 @@
 # SQL
 
-SQL Repository
+In this folder you will find all the `SQL` script that we wrote during the lessons. Every script is organized with a main folder with respect to the discussed topic.
 
-## Let's get started to .md
-
-In this page you will find all the links to the SQL codes we wrote during the lessons.
-
-It follows a basic introduction to the markdown characters to compile a README.md
-
-|Document|Description|
-|---|---|
-| | |
-|link1| description1|
-
-`inserire del codice`
-
-``` sql
-SELECT *
-FROM Sales.Orders
-```
-
-![Alt text](imageSample.png)
-
-If you are looking for some other info you can use:
+If you are looking for some other info about how to wrote a markdown file you can follow the links:
 
 - [Markdown Guide](https://www.markdownguide.org/)
 
