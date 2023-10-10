@@ -20,7 +20,7 @@ SELECT *
 FROM Sales.Orders
 ```
 
-![Alt text](image.png)
+![Alt text](imageSample.png)
 
 If you are looking for some other info you can use:
 
