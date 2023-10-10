@@ -1,23 +1,11 @@
 # SQL
 
-SQL Repository
+In this folder you will find all the `SQL` script that we wrote during the lessons. Every script is organized with a main folder with respect to the discussed topic.
 
-## Table of Contents
+If you are looking for some other info about how to wrote a markdown file you can follow the links:
 
-In this page you will find all the links to the SQL codes we wrote during the lessons.
+- [Markdown Guide](https://www.markdownguide.org/)
 
-|Document|Description|
-|---|---|
-| | |
-|link1| description1|
+- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 
-`inserire del codice`
-
-``` sql
-SELECT *
-FROM Sales.Orders
-```
-
-![Alt text](image.png)
-
-pippo
+- [Github syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
