@@ -13,7 +13,7 @@ In this folder you will find all the `SQL` script that we wrote during the lesso
 |[SQL injection](./JSON_Function/backup%20e%20test%20sql%20injection.sql)| Try to inject some code in these stored procedure! |
 |**Security**|
 |[Dynamic data masking](./Security/DynamicDataMasking.sql)|Example following the Microsoft documentation to implemnt and use the feature|
-|[Row Level Security (RLS)](./Security/rowLevelSecurity.sql)|Example following the Microsoft documentation to implemnt and use the feature|
+|[Row Level Security (RLS)](./Security/rowLevelSecurity.sql)|Example following the Microsoft documentation to implement and use the feature|
 |**SELECT**|
 |[Index sumup](./SELECT/sumup%20index%20utilization.sql)| Index utilization examples |
 |[SELECT sumup](./SELECT/sumup%20select.sql)| Query statement examples |
