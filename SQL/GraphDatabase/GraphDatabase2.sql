@@ -138,4 +138,26 @@ Delta	T-SQL
 Fox		T-SQL
 */
 
---
+-- Dato un linguaggio quali sono tutti i possibili utenti di partenza che possono accedervi
+select *, count(*) OVER (PARTITION BY Name) as [#Languages] from
+(
+	select distinct 
+		Name, Language
+	from(
+			select 
+				Person.Name
+				,STRING_AGG( FollowedPerson.Name, ' -> ' ) WITHIN GROUP (GRAPH PATH) as FollowedPeople
+				,LAST_VALUE( FollowedPerson.Name ) WITHIN GROUP (GRAPH PATH) as LastPerson
+				,count(FollowedPerson.Name) WITHIN GROUP (GRAPH PATH) as Level
+				, skill.[Language]
+			from 
+				its.Person as Person
+				,its.Follows for path as Follows	
+				,its.Person for path as FollowedPerson
+				,its.Competence as Knows
+				,its.skill as Skill
+			where 1=1
+				and MATCH(SHORTEST_PATH(Person (-(Follows)-> FollowedPerson)+)  and LAST_NODE(FollowedPerson) -(Knows)-> Skill )
+		) t
+	WHERE T.Name <> T.LastPerson
+) t2
