@@ -52,7 +52,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     
     if name and birthdate:
         query_result = insertRecord(name, birthdate)
-        logging.info(query_result)
+        logging.info(query_result.messages)
         return func.HttpResponse(f"Hello, {name}. You are {age} so you can access the hidden data.")
     elif not name:
         return func.HttpResponse(f"You are {age}, but you have to provide your name.")
